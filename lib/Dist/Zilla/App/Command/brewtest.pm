@@ -39,7 +39,6 @@ sub get_perl {
 }
 
 sub find_perlbrew {
-    # there should be a module that works like 'which'.
     my $perlbrew = which('perlbrew') or die 'no perlbrew?';
     chomp $perlbrew;
     return "$^X $perlbrew";
